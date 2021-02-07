@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+header,
+legend,
+form,
+fieldset {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100vw;
+    background-color: #444145;
+    color: white;
+    text-align: center;
+}
+
+main {
+    
+}
+
+.description {
+    text-align: center;
+}
+
+form {
+    justify-content: flex-start;
+
+}
+
+fieldset {
+    border: none;
+    justify-content: space-around;
+}
+
+.text-box {
+    text-decoration: none;
+}
+
+#copyright {
+    font-style: italic;
+    text-align: center;
+}
+
+
