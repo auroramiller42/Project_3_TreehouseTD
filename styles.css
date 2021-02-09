@@ -11,16 +11,21 @@ form,
     display: flex;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
+    background-color: #d8e0e0
 }
 
 a {
     text-decoration: none;
-    color: red;
+    font: bold #796baa;
+}
+
+a:link {
+    color: #796baa;
 }
 
 header {
     width: 100vw;
-    background-color: #444145;
+    background-color: #82A2B5;
     color: white;
     text-align: center;
     font-family: 'Stalinist One', cursive;
@@ -65,6 +70,7 @@ select {
     border-radius: 5px;
     border: 2px solid lightgray;
     margin: 5px 0 10px;
+    background-color: rgb(233, 233, 233);
 }
 
 input[type="email"]::placeholder,
@@ -108,12 +114,19 @@ label {
 }
 
 textarea {
-    background-color: #B0D7FF;
+    background-color: rgb(233, 233, 233);
     border-radius: 5px;
-    border: 2px solid #B0D7FF;
+    border: 2px solid rgb(233, 233, 233);
     width: 100%;
     height: auto;
 }
+input:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid #B3DFFA;
+    border-radius: 5px;
+}
+
 
 .submit {
     background-color: teal;
