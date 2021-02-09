@@ -129,7 +129,7 @@ textarea:focus {
 
 
 .submit {
-    background-color: teal;
+    background-color: rgb(125, 199, 199);
     border-radius: 5px;
     padding: 1em 5em;
     font-family: 'Stalinist One', cursive;
