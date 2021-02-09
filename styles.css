@@ -6,15 +6,16 @@ body,
 header,
 legend,
 form,
-fieldset {
+.contact,
+.description {
     display: flex;
-    margin: auto;
     flex-direction: column;
-    justify-content: flex-start;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 a {
     text-decoration: none;
+    color: red;
 }
 
 header {
@@ -22,28 +23,103 @@ header {
     background-color: #444145;
     color: white;
     text-align: center;
+    font-family: 'Stalinist One', cursive;
 }
 
 main {
-    
+    margin: 0 5%;
 }
 
 .description {
     text-align: center;
 }
 
-form {
-    justify-content: flex-start;
-
+.description h2 {
+    margin-bottom: 0;
 }
 
-fieldset {
+h2 {
+    font: 800 25px 'Ubuntu', sans-serif;
+}
+
+legend {
+    font: 800 25px 'Ubuntu', sans-serif;
+    justify-content: flex-start;
+    margin: 1em 0;
+}
+
+form {
+    justify-content: flex-start;
+}
+
+fieldset,
+.contact {
     border: none;
     justify-content: space-around;
+    padding-left: 0;
+}
+
+input,
+select {
+    padding: .75em;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+    margin: 5px 0 10px;
+}
+
+input[type="email"]::placeholder,
+input[type="text"]#name::placeholder {
+    text-align: right;
+    font-style: italic;
+    padding-right: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-top: 2px;
+}
+
+p, 
+label {
+    font: 400 16px;
+}
+
+.contact > label 
+{
+    margin: auto 0;
+}
+
+.newsletter {
+    display: grid;
+    grid-template-columns: 30px 1fr;   
+    margin-bottom: 1em; 
+}
+
+#other-topics {
+    margin-top: 1em;
+}
+
+#zip {
+    margin-right: auto;
 }
 
 .text-box {
     text-decoration: none;
+}
+
+textarea {
+    background-color: #B0D7FF;
+    border-radius: 5px;
+    border: 2px solid #B0D7FF;
+    width: 100%;
+    height: auto;
+}
+
+.submit {
+    background-color: teal;
+    border-radius: 5px;
+    padding: 1em 5em;
+    font-family: 'Stalinist One', cursive;
 }
 
 #copyright {
@@ -51,4 +127,38 @@ fieldset {
     text-align: center;
 }
 
+hr {
+    height: .5em;
+    background-color: black;
+    border-style: none;
+}
 
+.hr2 {
+    height: .25em;
+    margin: 0;
+    border-style: none;
+}
+
+footer {
+    padding-bottom: 5em;
+}
+
+@media (min-width:768px)
+{
+    main {
+        margin: auto 25%;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        column-gap: 3em;
+
+    }
+
+    .newsletter {
+        display: grid;
+        grid-template-columns: 30px 1fr;    
+    }
+
+}

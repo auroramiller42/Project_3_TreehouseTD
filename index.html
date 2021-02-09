@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&family=Ubuntu&display=swap" rel="stylesheet">
     <title>The Code Review</title>
 </head>
 <body>
@@ -16,19 +18,23 @@
     <main>
         <div class="description">
             <h2>Signup for our newsletter</h2>
-        <p>Get the latest news on hor your code is doing right in your inbox</p>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
         </div>
         <hr>
+        <hr class="hr2">
+    
         <form>
             <legend>Contact Information</legend>
                 <fieldset>
-                    <label for="name"><a href="#name" class="text-box">Full name</a></label><input type="text" id="name" name="user-name" required>
-                    <label for="email"><a href="#email">Email Address</a></label><input type="email" id="email" name="user-email" required>
+                    <div class="contact">
+                    <label for="name"><a href="#name" class="text-box">Full name</a></label><input type="text" id="name" name="user-name" placeholder="Required" required>
+                    <label for="email"><a href="#email">Email Address</a></label><input type="email" id="email" name="user-email" placeholder="Required" required>
                     <label for="phone"><a href="#phone">Phone Number</a></label><input type="tel" id="phone" name="user-phone">
                     <label for="street-address"><a href="#street-address">Street Address</a></label><input type="text" id="street-address" name="user-street-address">
                     <label for="city"><a href="#city">City</a></label><input type="text" id="city" name="user-city">
                     <label for="state"><a href="#state">State</a></label>
                     <select name="user-state" id="state">
+                            <option disabled selected value >Choose State</option>
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
                             <option value="AZ">Arizona</option>
@@ -82,19 +88,24 @@
                             <option value="WY">Wyoming</option>
                         </select>
                     <label for="zip"><a href="zip">Zip Code</a></label><input type="zip" id="zip" name="user-zip">
+                </div>
                 </fieldset>
-                <hr>
+                <hr class="hr2">
         <legend>Newsletter</legend>
                 <fieldset>
                     <p>Select the newslewstters you would like to receive</p>
-                    <input type="checkbox" name="user-html-newsletter" id="html-newsletter"><label for="html-lettertype"><a href="#html-newsletter">HTML news</a></label>
-                    <input type="checkbox" id="css-newsletter" name="user-css-newsletter"><label for="css-newsletter"><a href="#css-newsletter">CSS News</a></label>
-                    <input type="checkbox" id="javascript-newsletter" name="user-javascript-newsletter"><label for="javascript-newsletter"><a href="#javascript-newsletter">Javascript News</a></label>
+                        <div class="newsletter">
+                            <input type="checkbox" name="user-html-newsletter" id="html-newsletter"><label for="html-lettertype"><a href="#html-newsletter">HTML news</a></label>
+                            <input type="checkbox" id="css-newsletter" name="user-css-newsletter"><label for="css-newsletter"><a href="#css-newsletter">CSS News</a></label>
+                            <input type="checkbox" id="javascript-newsletter" name="user-javascript-newsletter"><label for="javascript-newsletter"><a href="#javascript-newsletter">Javascript News</a></label>
+                        </div>
                     <p>Newsletter format</p>
-                    <input type="radio" id="html-format" name="user-html-format"><label for="html-format"><a href="#html-format">HTML</a></label>
-                    <input type="radio" name="user-plain-format" id="plain-format"><label for="plain-format"><a href="#plain-format">Plain text</a></label>
-                    <label for="other-topics"><a href="other-topics">Other topics you'd like to hear about</a></label>
-                    <textarea name="user-topics" id="other-topics" cols="30" rows="10"></textarea>
+                        <div class="newsletter">
+                            <input type="radio" id="html-format" name="user-format"><label for="html-format"><a href="#html-format">HTML</a></label>
+                            <input type="radio" name="user-format" id="plain-format"><label for="plain-format"><a href="#plain-format">Plain text</a></label>
+                        </div>
+                    <label for="other-topics" class="topics"><a href="#other-topics">Other topics you'd like to hear about</a></label><br>
+                    <textarea name="user-topics" id="other-topics" rows="10"></textarea>
                 </fieldset>
             <input type="submit" class="submit" value="Sign Up">
             
