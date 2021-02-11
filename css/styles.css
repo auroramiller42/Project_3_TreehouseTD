@@ -16,7 +16,8 @@ form,
 
 a {
     text-decoration: none;
-    font: bold #796baa;
+    font: bold;
+    color: #796baa;
 }
 
 a:link {
